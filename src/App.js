@@ -20,6 +20,8 @@ function App() {
 	const addItem = item => {
 		setCart([...cart, item]);
 	};
+	
+	document.title = 'React Shopping Cart';
 
 	return (
 		<ProductContext.Provider value={{ products, addItem }}>
